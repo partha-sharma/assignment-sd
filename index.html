@@ -7,12 +7,13 @@
   <title>Smile Studio</title>
 </head>
 
-<body class="h-screen flex bg-gray-100 font-sans">
+<body class="h-screen flex bg-gray-100 font-sans" >
 
+    
   <!-- Sidebar -->
   <div class="w-60 h-full shadow-xl flex flex-col bg-white text-center">
     <div class="p-4">
-      <h1 class="text-2xl font-bold text-gray-800">Smile Studio</h1>
+      <h1 class="text-[32px] font-bold text-gray-800 mt-1 ">Smile Studio</h1>
     </div>
 
     <nav class="flex-1 mt-4 ">
@@ -51,9 +52,41 @@
   </div>
 
   <!-- Main content -->
-  <div class="flex-1 p-6">
-    <h2 class="text-2xl font-semibold ">Book An Appointment</h2>
+  <section class="main mt-4 mx-10">
+    <div class="">
+    <h2 class="text-[32px] font-bold ">Book An Appointment</h2>
   </div>
+  
+  <!-- Service & Doctor Section -->
+<div class="service-doctor flex  gap-46 mt-10 ">
+  
+  <!-- Service -->
+  <div class="flex flex-col w-140">
+    <label for="service" class="mb-2 text-gray-700 font-medium mx-1">Service</label>
+    <select id="service" class="border-[1px] border-[#cecece] rounded-lg px-5 py-3
+     bg-white shadow-md focus:outline-none focus:ring-2 focus:ring-[#bbb8b8]">
+      <option>Teeth Whitening</option>
+      <option>Dental Cleaning</option>
+      <option>Root Canal</option>
+      <option>Braces Consultation</option>
+    </select>
+  </div>
+
+  <!-- Doctor -->
+  <div class="flex flex-col w-140  ">
+    <label for="doctor" class="mb-2 text-gray-700 font-medium mx-1">Doctor</label>
+    <select id="doctor" class="border-[1px] border-[#cecece] rounded-lg px-5 py-3
+     bg-white shadow-md focus:outline-none focus:ring-2 focus:ring-[#bbb8b8]">
+      <option>Dr. Anika Rahman</option>
+      <option>Dr. Kamal Hossain</option>
+      <option>Dr. Redowan Sarker</option>
+      <option>Dr. Shaila Ahmed</option>
+    </select>
+  </div>
+
+</div>
+
+  </section>
 
 </body>
 </html>
