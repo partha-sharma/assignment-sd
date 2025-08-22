@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tailwind cdn  -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- fontawsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Smile Studio</title>
 </head>
 
@@ -11,43 +14,54 @@
 
     
   <!-- Sidebar -->
-  <div class="w-60 h-full shadow-xl flex flex-col bg-white text-center">
-    <div class="p-4">
-      <h1 class="text-[32px] font-bold text-gray-800 mt-1 ">Smile Studio</h1>
+  <div class="w-80 h-full shadow-xl flex flex-col bg-white ">
+    <div class="px-5 py-3">
+      <h1 class="text-[32px] font-bold text-gray-800 mt-1 block">Smile Studio</h1>
     </div>
 
     <nav class="flex-1 mt-4 ">
-      <ul>
-        <div class="button px-4 ">
-            <li class="px-4 py-2 hover:bg-gray-200 rounded-xl">
-          <a href="#" class="block pr-27 font-medium text-lg text-[#9b9a9a] hover:text-[#0f0f0f]">Home</a>
+      <ul class="">
+        
+           <li class="px-3 py-1 ">
+          <a href="services.html" class="block rounded-xl px-2 py-2 font-semibold text-[18px]
+           hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
+           <i class="fa-solid fa-house"></i> <span class="m-1"></span> Home</a>
         </li>
-        </div>
-        <div class="px-4">
-            <li class="px-4 py-2 hover:bg-gray-200 rounded-xl">
-          <a href="services.html" class="block pr-25 font-medium text-lg text-[#9b9a9a] hover:text-[#0f0f0f]">Services</a>
+        
+        
+            <li class="px-3 py-1 ">
+          <a href="services.html" class="block rounded-xl px-2 py-2 font-semibold text-[18px]
+           hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
+           <i class="fa-solid fa-tooth"></i> <span class="m-1"></span> Services</a>
         </li>
-        </div>
-        <div class="px-4">
-            <li class="px-4 py-2 hover:bg-gray-200 rounded-xl">
-          <a href="doctors.html" class="block pr-25 font-medium text-lg text-[#9b9a9a] hover:text-[#0f0f0f]">Doctors</a>
+        
+         <li class="px-3 py-1 ">
+          <a href="services.html" class="block rounded-xl px-2 py-2 font-semibold text-[18px]
+           hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
+           <i class="fa-solid fa-user-doctor"></i> <span class="m-1"></span> Doctors</a>
         </li>
-        </div>
-        <div class="px-4">
-            <li class="px-4 py-2 hover:bg-gray-200 rounded-xl">
-          <a href="#" class="block pr-25 font-medium text-lg text-[#9b9a9a] hover:text-[#0f0f0f]">Reviews</a>
+
+            <li class="px-3 py-1 ">
+          <a href="services.html" class="block rounded-xl px-2 py-2 font-semibold text-[18px]
+           hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
+           <i class="fa-solid fa-star"></i><span class="m-1"></span> Reviews</a>
         </li>
-        </div>
-        <div class="px-4 ">
-            <li class="px-4 py-2 hover:bg-gray-200 rounded-xl">
-          <a href="#" class="block pr-25 font-medium text-lg text-[#9b9a9a] hover:text-[#0f0f0f] ">Contact</a>
+        
+        
+            <li class="px-3 py-1 ">
+          <a href="services.html" class="block rounded-xl px-2 py-2 font-semibold text-[18px]
+           hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
+           <i class="fa-solid fa-phone"></i> <span class="m-1"></span> Contact</a>
         </li>
-        </div>
+        
+        
+           
+        
       </ul>
     </nav>
 
     <div class="p-3 hover:bg-gray-200 rounded-xl my-3 mx-3">
-      <a href="#" class="block pr-25 font-medium text-lg text-[#9b9a9a] hover:text-[#0f0f0f]">Profile</a>
+      <a href="#" class="block pr-25 font-medium text-lg text-[#9b9a9a] hover:text-[#0f0f0f]"><i class="fa-solid fa-user"></i><span class="m-1"> </span>Profile</a>
     </div>
   </div>
 
@@ -224,7 +238,7 @@
                 </div>
 
     <!-- Confirm Button -->
-    <button class="mt-8 px-6 py-3 bg-blue-500 text-white hover:text-white font-medium rounded-lg shadow hover:bg-blue-600 transition-colors duration-300 ease-in-out">
+    <button class="mt-8 px-6 py-3  bg-blue-500 text-white hover:text-white font-medium rounded-lg shadow hover:bg-blue-600 transition-colors duration-300 ease-in-out">
         Confirm Booking
     </button>
     </div>
