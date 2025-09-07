@@ -1,6 +1,9 @@
 import React from 'react';
+import { useOutletContext } from 'react-router-dom'; 
 
-function MainContent({toggleSidebar}) {
+function HomePage() {
+  const { toggleSidebar } = useOutletContext();
+
   return (
     // <!-- Main content -->
     
@@ -199,4 +202,4 @@ function MainContent({toggleSidebar}) {
   );
 }
 
-export default MainContent;
+export default HomePage;

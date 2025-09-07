@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -12,35 +13,35 @@ function Sidebar() {
         <ul className="">
           
              <li className="px-3 py-1 ">
-            <a href="services.html" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
+            <Link to="/" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
              hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
-             <i className="fa-solid fa-house"></i> <span className="m-1"></span> Home</a>
+             <i className="fa-solid fa-house"></i> <span className="m-1"></span> Home</Link>
           </li>
           
           
               <li className="px-3 py-1 ">
-            <a href="services.html" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
+            <Link to="/services" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
              hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
-             <i className="fa-solid fa-tooth"></i> <span className="m-1"></span> Services</a>
+             <i className="fa-solid fa-tooth"></i> <span className="m-1"></span> Services</Link>
           </li>
           
            <li className="px-3 py-1 ">
-            <a href="services.html" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
+            <Link to="/doctors" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
              hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
-             <i className="fa-solid fa-user-doctor"></i> <span className="m-1"></span> Doctors</a>
+             <i className="fa-solid fa-user-doctor"></i> <span className="m-1"></span> Doctors</Link>
           </li>
 
               <li className="px-3 py-1 ">
-            <a href="services.html" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
+            <Link to="/reviews" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
              hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
-             <i className="fa-solid fa-star"></i><span className="m-1"></span> Reviews</a>
+             <i className="fa-solid fa-star"></i><span className="m-1"></span> Reviews</Link>
           </li>
           
           
               <li className="px-3 py-1 ">
-            <a href="services.html" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
+            <Link to="/contact" className="block rounded-xl px-2 py-2 font-semibold text-[18px]
              hover:bg-gray-200 text-[#9b9a9a] hover:text-[#0f0f0f] transition-colors duration-300 ease-in-out">
-             <i className="fa-solid fa-phone"></i> <span className="m-1"></span> Contact</a>
+             <i className="fa-solid fa-phone"></i> <span className="m-1"></span> Contact</Link>
           </li>
           
         </ul>
