@@ -10,7 +10,7 @@ function HomePage() {
 
     <section className="main mt-4 mx-10">
       <div className="">
-        <h2 className="text-[32px] font-bold ">Book An Appointment</h2>
+        <h2 className="text-[32px] font-bold text-black">Book An Appointment</h2>
       </div>
       
       {/* <!-- Service & Doctor Section --> */}
