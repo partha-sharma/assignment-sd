@@ -1,8 +1,21 @@
 import React from 'react';
 
-function MainContent() {
+function MainContent({toggleSidebar}) {
   return (
     // <!-- Main content -->
+    
+    <div className="flex-1 flex flex-col"> 
+      {/* Header with the button */}
+      <header className="p-4 flex items-center">
+        {/* 2. Add the button with an onClick event */}
+        <button onClick={toggleSidebar} className="p-2 rounded-md hover:bg-gray-200">
+           <i className="fa-solid fa-bars text-2xl"></i> {/* FontAwesome menu icon */}
+        </button>
+      </header>
+
+
+
+
     <section className="main mt-4 mx-10">
       <div className="">
         <h2 className="text-[32px] font-bold ">Book An Appointment</h2>
@@ -64,7 +77,7 @@ function MainContent() {
             <div></div>
 
             {/* <!-- Dates --> */}
-            <button className="w-10 h-10 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">1</button>
+            <button className="w-10 h-10 rounded-full hover:bg-[#fd0303] hover:text-white transition-colors duration-300 ease-in-out">1</button>
             <button className="w-10 h-10 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">2</button>
             <button className="w-10 h-10 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">3</button>
             <button className="w-10 h-10 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">4</button>                    
@@ -182,6 +195,7 @@ function MainContent() {
         </div>
       </section>
     </section>
+    </div>
   );
 }
 
