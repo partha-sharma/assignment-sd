@@ -77,7 +77,7 @@ function MainContent({toggleSidebar}) {
             <div></div>
 
             {/* <!-- Dates --> */}
-            <button className="w-10 h-10 rounded-full hover:bg-[#fd0303] hover:text-white transition-colors duration-300 ease-in-out">1</button>
+            <button className="w-10 h-10 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">1</button>
             <button className="w-10 h-10 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">2</button>
             <button className="w-10 h-10 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">3</button>
             <button className="w-10 h-10 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">4</button>                    
