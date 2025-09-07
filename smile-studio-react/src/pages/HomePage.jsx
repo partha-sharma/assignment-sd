@@ -1,20 +1,9 @@
 import React from 'react';
-import { useOutletContext } from 'react-router-dom'; 
 
 function HomePage() {
-  const { toggleSidebar } = useOutletContext();
-
+  
   return (
     // <!-- Main content -->
-    
-    <div className="flex-1 flex flex-col"> 
-      {/* Header with the button */}
-      <header className="p-4 flex items-center">
-        {/* 2. Add the button with an onClick event */}
-        <button onClick={toggleSidebar} className="p-2 rounded-md hover:bg-gray-200">
-           <i className="fa-solid fa-bars text-2xl"></i> {/* FontAwesome menu icon */}
-        </button>
-      </header>
 
 
 
@@ -198,7 +187,7 @@ function HomePage() {
         </div>
       </section>
     </section>
-    </div>
+   
   );
 }
 

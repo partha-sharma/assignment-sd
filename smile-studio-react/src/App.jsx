@@ -4,7 +4,6 @@ import Sidebar from './components/Sidebar';
 import HomePage from './pages/HomePage'; 
 import ServicesPage from './pages/ServicesPage'; 
 import DoctorsPage from './pages/DoctorsPage';
-// A placeholder for the services page we will create soon
 
 
 // The AppLayout component will contain our shared UI (like the sidebar)
@@ -17,12 +16,27 @@ function AppLayout() {
 
   return (
     <div className="h-screen flex bg-gray-100 font-sans">
+      {/* The sidebar is rendered conditionally based on state */}
       {isSidebarOpen && <Sidebar />}
-      {/* The Outlet component renders the current page (e.g., HomePage) */}
-      <Outlet context={{ toggleSidebar }} />
+
+      {/* This wrapper will contain the toggle button AND the page content */}
+      <main className="flex-1 flex flex-col">
+        {/* We moved the header with the toggle button HERE */}
+        <header className="p-4 flex items-center bg-white shadow-sm">
+          <button onClick={toggleSidebar} className="p-2 rounded-md hover:bg-gray-200">
+            <i className="fa-solid fa-bars text-xl text-gray-700"></i>
+          </button>
+        </header>
+        
+        {/* The Outlet now renders the page content below the header */}
+        <div className="flex-1 overflow-y-auto">
+          <Outlet />
+        </div>
+      </main>
     </div>
   );
 }
+
 
 // The main App component now only handles routing
 function App() {
