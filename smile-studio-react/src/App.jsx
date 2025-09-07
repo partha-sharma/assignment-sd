@@ -3,14 +3,9 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import HomePage from './pages/HomePage'; 
 import ServicesPage from './pages/ServicesPage'; 
+import DoctorsPage from './pages/DoctorsPage';
 // A placeholder for the services page we will create soon
 
-
-
-// A placeholder for the doctors page
-function DoctorsPage() {
-  return <h1 className="p-10 text-4xl font-bold">Doctors Page</h1>;
-}
 
 // The AppLayout component will contain our shared UI (like the sidebar)
 function AppLayout() {
