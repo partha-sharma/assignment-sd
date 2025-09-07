@@ -5,6 +5,13 @@ import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage'; 
 import DoctorsPage from './pages/DoctorsPage';
 
+function ReviewsPage() {
+  return <div className="p-10"><h1 className="text-4xl font-bold">Reviews Page</h1></div>;
+}
+
+function ContactPage() {
+  return <div className="p-10"><h1 className="text-4xl font-bold">Contact Page</h1></div>;
+}
 
 // The AppLayout component will contain our shared UI (like the sidebar)
 function AppLayout() {
@@ -47,7 +54,9 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="services" element={<ServicesPage />} />
           <Route path="doctors" element={<DoctorsPage />} />
-          {/* Add routes for Reviews and Contact later */}
+          <Route path="reviews" element={<ReviewsPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>
